@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Keyboard from './components/Keyboard';
+import Navbar from './components/Navbar';
+// import Timer from  './components/Timer';
+import TypingBox from './components/TypingBox';
 
-function App() {
+const App = () => {
+  const [accuracy, setAccuracy] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar></Navbar>
+     
+      <p id='demo'></p>
+      <div className='main-div'>
+      <h1>Generator</h1><br></br>
+      <Keyboard></Keyboard> <br></br><br></br><br></br>
+      <TypingBox setAccuracy={setAccuracy} />
+      <p>Accuracy: {accuracy}%</p>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

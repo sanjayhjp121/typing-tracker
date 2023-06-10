@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,43 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #484454;
+  color: white;
+}
+
+.navbar{
+  background-color: #282424;
+  color: white;
+  height: 80px;
+  padding-left: 600px;
+  padding-top: 15px;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+
+.main-div{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+h1,h2{
+  font-style: italic;
+}
+
+.box{
+  width: 400px;
+  background-color: #48444c;
+  border-color: rgba(32,33,35,.5);
+  color: rgba(254, 254, 254, 0.538);
 }
